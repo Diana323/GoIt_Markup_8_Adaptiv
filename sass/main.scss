@@ -1,0 +1,32 @@
+:root {
+    --main-color: #212121;
+    --color-grey---: #2F303A;
+    --color-sky-: #2196F3;
+    --color-milk-: #FFFFFF;
+}
+img {
+    display: block;
+    height: auto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0;
+    // padding: 0;
+}
+.body {
+    background-color: #F5F5F5;
+}
+.ul{
+    list-style: none;
+    text-decoration: none;
+}
+.container.responsive {
+    max-width: 1600px;
+  }
+
+  @import'./header';
+  @import'./hero';
+
+  @import'../utils/mixin';

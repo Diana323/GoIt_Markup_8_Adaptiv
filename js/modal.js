@@ -1,0 +1,28 @@
+(() => {
+    const refs = {
+      openModalBtn: document.querySelector("[data-modal-open]"),
+      closeModalBtn: document.querySelector("[data-modal-close]"),
+      modal: document.querySelector("[data-modal]"),
+    };
+  
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+    }
+  })();
+  
+  function* getNumber(){
+  yield 7;
+  yield 2;
+  yield 9;
+  }
+  const numberGenerator=getNumber();
+  let next=numberGenerator.next();
+  
+  console.log(next);
+  console.log(numberGenerator.next());
+  console.log(numberGenerator.next());
+  console.log(numberGenerator.next());
+  
