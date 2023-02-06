@@ -23,6 +23,30 @@
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="logo ul"><span>Web</span>Studio</a>
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">
+            <svg class="" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu_40px"></use>
+              </svg>
+        </button>
+        <div id="myDropdown" class="dropdown_content">
+            <a class="dropdown__link" href="./index.html">Студія</a>
+            <a class="dropdown__link" href="./portfolio.html">Портфоліо</a>
+            <a class="dropdown__link" href="#">Контакти</a></li>
+          <div class="dropdown__wrap">
+            <a class="dropdown__connect" href="tel:+380961111111">
+            +38 096 111 11 11</a>
+            <a class="dropdown__connect__link" href="mailto:info@devstudio.com">
+            info@devstudio.com</a>
+            <div class="dropdown__wraper">
+            <a class="dropdown__app" href="#">Instagram</a>
+            <a class="dropdown__app" href="#">Twitter</a>
+            <a class="dropdown__app" href="#">Facebook</a>
+            <a class="dropdown__app" href="#">LinkedIn</a>
+            </div>
+        </div>
+        </div>
+    </div>
         <nav class="navigation">
           <ul class="navigation__list ul">
             <li class="navigation__item">
@@ -45,7 +69,7 @@
           </li>
           <li class="navigation__item">
             <a class="connect__link" href="tel:+380961111111"
-              ><svg class="connect__tel" width="10" height="16">
+              ><svg class="connect__tel" width="10" height="15">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a>
