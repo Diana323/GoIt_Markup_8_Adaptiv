@@ -7,23 +7,27 @@
         
     }
     @media screen and (min-width:1200px){
-        width: 1200px;
+        // width: 1600px;
         padding-top: 94px;
         padding-bottom: 94px;
-        display: flex;
+        // display: flex;
     }
+}
+.section_wrap{
+    width: 1200px;
+
 }
 .section-block {
     padding-top: 94px;
     margin-left: auto;
     margin-right: auto;
 }
-.yyy{
-    background-color: brown;
-}
+
 .wrap-item-list {
     width: 270px; height: 120px;
-    @extend flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #F5F4FA;
     margin-bottom: 30px;
     }
@@ -39,22 +43,44 @@
         }
    }
 .title-caption {
-    @include font(700, 14, 16, 0.03em);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+   
     color: var(--main-color);
     padding-bottom: 10px;
+   
 }
 .text-desc {
-    @include font(400, 14, 1.71, 0.03em);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
     color: #757575;
 }
 .title {
     text-align: center;
-    @include font(700, 36, 1.16, 0.03em);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  
     color: var(--main-color);
     padding-bottom: 50px;
 }
+
+.block {
+    
+        display: flex;
+       justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: auto;
+      }
 .photo{
     margin-right: 30px;
+
  &:last-child{
     margin-right: 0px;
 }
@@ -76,11 +102,10 @@
     padding-top: 27px;
     padding-bottom: 27px;
     text-align: center;
-    @include font(700, 14, 16, 3%);
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 16;
+    letter-spacing: 3%;
     font-style: Bold;
     color: #FFFFFF;
 }
-
-
-
-
