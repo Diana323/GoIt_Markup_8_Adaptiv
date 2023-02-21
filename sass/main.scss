@@ -22,27 +22,30 @@ h1,h2,h3,h4,h5,h6,p,ul {
     list-style: none;
     text-decoration: none;
 }
-.container.responsive {
+.container .responsive {
     max-width: 1600px;
   }
-//.visually-hidden {
- //   position: absolute;
- //   white-space: nowrap;
- //   width: 1px;
-  //  height: 1px;
-  //  overflow: hidden;
- //   
-  //  border: 0;
- //   padding: 0;
-  //  clip: rect(0 0 0 0);
- //   clip-path: inset(50%);
- //   margin: -1px;
-//}
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
   @import'./header';
   @import'./hero';
   @import'./features';
   @import'./menu';
-  
+  @import'./footer';
+  @import"./modal";
+  @import"./navigation";
+  @import"./portfolio";
 
   @import'../utils/mixin';
   @import'../utils/placeholder';

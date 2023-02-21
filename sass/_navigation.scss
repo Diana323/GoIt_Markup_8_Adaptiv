@@ -1,0 +1,62 @@
+.section {
+    .bt {
+   font-family: 'Roboto';
+//    @include font(500, 16, 1.62, 0.03em);
+   color: #212121;
+   background-color: #F5F4FA;
+}
+}
+.btn {
+   padding-bottom: 50px;
+}
+.bt {
+   cursor: pointer;
+   width: 112px;
+   height: 38px;
+   left: 726px;
+   top: 174px;
+   background-color: #F5F4FA;
+  
+   font-family: inherit;
+//    @include font (500, 16, 1.16, 0.03em);
+   border: none;
+   border-radius: 4px;
+   margin-left: 10px;
+   color: var(--main-color);
+  
+   transition: backgroud-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   &:hover,
+   &:focus{
+   color: var(--color-milk-);
+   background: #188CE8;
+   }
+   &:last-child{
+       margin-left: 0px;
+   }
+}
+.filters {
+   display: flex;
+   justify-content: center;
+   gap: 8px;
+}
+
+// .navigation {
+//     color: var(--main-color);
+//     display: flex;
+//     margin-left: 93px;
+// }
+// .navigation .item{
+//     margin-right: 20px;
+// }
+
+// .navigation .item:last-child{
+//     margin-right:0px;
+// }
+// .navigation-link{
+//    display: flex;
+//    margin-left: auto;
+//    align-items: center;
+// }
+// .navigation-link .item +.item {
+//    margin-left: 50px;
+// }
