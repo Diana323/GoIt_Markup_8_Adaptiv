@@ -49,26 +49,33 @@
     @media screen and (min-width:480px) {
         
     }
-   
-    
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0;
+    }
+    @media screen and (min-width:1200px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
     }
-
+ }
 
 .flex-element {
-    flex-basis: 370px;
+    
     &:focus,
     &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     } 
     @media screen and (min-width:768px) {
-        width: calc((100% - 4 * 10px)/2);
+        flex-basis: 350px;
+        width: calc((100% - 5 * 10px)/2);
         margin: 10px;
     }
     @media screen and (min-width:1200px) {
-        width: calc((100% - 8 * 10px)/3);
+        flex-basis: 370px;
+        width: calc((100% - 6 * 10px)/3);
         margin: 30px;
     }
     &:not(:last-child) {
