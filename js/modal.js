@@ -13,6 +13,7 @@
     }
   })();
   
+  
   function* getNumber(){
   yield 7;
   yield 2;

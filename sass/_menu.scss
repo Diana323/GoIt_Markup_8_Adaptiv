@@ -1,7 +1,6 @@
 .dropbtn{
     
-    @media screen and (min-width:480px){
-
+    @media screen and (min-width:480px) {
    margin-left: auto;
    border:none;
     background-color: transparent;
@@ -33,13 +32,13 @@
        
 }
 .dropdown{
-    // position: relative;
+    position: relative;
     display: inline-block;
     margin-left: auto;
     
 }
-.dropdown_content{
-display: none;
+.dropdown_content {
+    // display: none;
     position: absolute;
     background-color: white;
     min-width: 480px;
@@ -49,8 +48,13 @@ display: none;
     right: 0px;
     z-index: 1;
     padding: 15px;
+    display: block;
 
 }
+// .dropdown_content, .is-hidden {
+//     opacity: 1;
+//     pointer-events: none;
+// }
 .dropdown__link{
     font-family: 'Roboto';
     font-style: normal;
@@ -68,7 +72,9 @@ display: none;
     color: #2196F3;
 }
 }
-.show {display: block;}
+.show {
+    display: block;
+ }
 .dropdown__connect{
     font-weight: 500;
     font-size: 34px;

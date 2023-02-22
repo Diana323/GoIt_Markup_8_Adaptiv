@@ -530,12 +530,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
       justify-content: space-around;
 }
 
-.cont-list {
-  width: 270px;
-  margin-right: 30px;
-}
-.cont-list:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .cont-list {
+    width: 270px;
+  }
+  .cont-list:last-child {
+    margin-right: 0;
+  }
 }
 
 .title-caption {
@@ -764,12 +765,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .dropdown {
+  position: relative;
   display: inline-block;
   margin-left: auto;
 }
 
 .dropdown_content {
-  display: none;
   position: absolute;
   background-color: white;
   min-width: 480px;
@@ -778,6 +779,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   right: 0px;
   z-index: 1;
   padding: 15px;
+  display: block;
 }
 
 .dropdown__link {
