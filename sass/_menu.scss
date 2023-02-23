@@ -3,6 +3,7 @@
     @media screen and (min-width:480px) {
    margin-left: auto;
    border:none;
+   
     background-color: transparent;
     cursor: pointer;
     margin-right: auto;
@@ -36,9 +37,10 @@
     display: inline-block;
     margin-left: auto;
     
+    
 }
 .dropdown_content {
-    // display: none;
+    display: none;
     position: absolute;
     background-color: white;
     min-width: 480px;
