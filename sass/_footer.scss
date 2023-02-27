@@ -22,12 +22,14 @@
     padding-top: 60px;
     padding-bottom: 60px; 
 justify-content: center;
+background-color: var(--color-grey---);
+height: 252px;
 }
 //////
 .page-title-footer {
-    background-color: var(--color-grey---);
+    // background-color: var(--color-grey---);
     letter-spacing: 0.06em;
-
+    // width: 1600px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;

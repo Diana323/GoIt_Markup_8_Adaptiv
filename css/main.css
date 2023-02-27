@@ -507,7 +507,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .wrap-item-list {
-  width: 270px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,16 +522,21 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .box {
+  width: 1200px;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0%;
 }
 
 @media screen and (min-width: 1200px) {
   .cont-list {
     width: 270px;
+    margin-right: 30px;
   }
   .cont-list:last-child {
     margin-right: 0;
@@ -567,24 +571,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .block {
+  padding: 0%;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
   margin: auto;
-}
-
-.photo {
-  margin-right: 30px;
-}
-.photo:last-child {
-  margin-right: 0px;
 }
 
 .what_we_do {
@@ -604,14 +602,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .text_app {
-  padding-top: 27px;
-  padding-bottom: 27px;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 700px;
   font-size: 14px;
   line-height: 16;
   letter-spacing: 3%;
   font-style: Bold;
+  position: relative;
+  bottom: 105%;
   color: #FFFFFF;
 }
 
@@ -674,24 +675,23 @@ h1, h2, h3, h4, h5, h6, p, ul {
   fill: #FFFFFF;
 }
 
-.client-item:last-child {
-  margin-right: 0px;
-}
-
 .clients {
+  padding: 0;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: auto;
 }
 
 .client-item {
   margin-right: 30px;
 }
 .client-item:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .clients-link {
@@ -704,7 +704,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 175px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -892,10 +892,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: var(--color-grey---);
+  height: 252px;
 }
 
 .page-title-footer {
-  background-color: var(--color-grey---);
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 26px;
