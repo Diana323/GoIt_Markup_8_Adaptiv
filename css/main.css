@@ -521,22 +521,52 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin-bottom: 30px;
 }
 
-.box {
-  width: 1200px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0%;
+@media screen and (min-width: 480px) {
+  .box {
+    width: 768px;
+    height: 480px;
+    margin: auto;
+    display: inline-block;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 768px) {
+  .box {
+    width: 768px;
+    height: 480px;
+    margin: auto;
+    display: inline-block;
+    text-align: justify;
+    padding: 10px;
+    /*  display: flex;
+     justify-content:space-between;*/
+  }
+}
+@media screen and (min-width: 1200px) {
+  .box {
+    width: 1200px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0%;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .cont-list {
+    width: 354px;
+    height: 226px;
+    margin-right: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .cont-list {
-    width: 270px;
-    margin-right: 30px;
+    width: 370px;
+    margin-right: 9px;
   }
   .cont-list:last-child {
     margin-right: 0;
@@ -568,6 +598,23 @@ h1, h2, h3, h4, h5, h6, p, ul {
   letter-spacing: 0.03em;
   color: var(--main-color);
   padding-bottom: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .container_block {
+    width: 480px;
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container_block {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container_block {
+    width: 1200px;
+  }
 }
 
 .block {
